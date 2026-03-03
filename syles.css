@@ -75,12 +75,12 @@
 }
 
 .name-and-username h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #020817;
 }
 
 .name-and-username p {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: #020817;
   font-weight: 700;
   background-color: #f1f5f9;
@@ -120,7 +120,7 @@
 .email p,
 .phone p,
 .address p {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: #64748b;
 }
 
@@ -160,7 +160,7 @@
 }
 
 .posttext p {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: #020817;
   font-weight: 700;
 }
@@ -195,13 +195,13 @@
 }
 
 .post-title {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: #020817;
   font-weight: 700;
 }
 
 .post-body {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: #64748b;
 }
 
@@ -211,7 +211,7 @@
 }
 
 .comment-text p {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #020817;
   font-weight: 700;
 }
@@ -227,13 +227,13 @@
 }
 
 .comment-name {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #020817;
   font-weight: 700;
 }
 
 .comment-body {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #64748b;
 }
 
