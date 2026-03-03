@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.main-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1rem;
+}
+
+.title-and-subtitle {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 2rem 1rem 1.5rem;
+  row-gap: 0.5rem;
+}
+
+.title-and-subtitle h1 {
+  font-size: clamp(1rem, 1rem + 0.85vw, 2.5rem);
+  color: #020817;
+  font-weight: 900;
+}
+
+.title-and-subtitle p {
+  font-size: 1.1rem;
+  color: #64748b;
+}
+
+.cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.user-card {
+  width: 32%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1.5rem;
+  border: 1px solid #e5e7eb;
+  padding: 1.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.name-and-username {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-and-username h3 {
+  font-size: 1.2rem;
+  color: #020817;
+}
+
+.name-and-username p {
+  font-size: 0.85rem;
+  color: #020817;
+  font-weight: 700;
+  background-color: #f1f5f9;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+}
+
+.details-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 0.75rem;
+}
+
+.email,
+.phone,
+.address {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.email span,
+.phone span,
+.address span {
+  font-size: 16px;
+  color: #64748b;
+}
+
+.email p,
+.phone p,
+.address p {
+  font-size: 1rem;
+  color: #64748b;
+}
+
+.post-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1rem;
+}
+
+.posttext-and-arrowicon {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.posttext {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.posttext-and-arrowicon span {
+  font-size: 16px;
+  color: #020817;
+  padding-top: 0.25rem;
+}
+
+.posttext p {
+  font-size: 1rem;
+  color: #020817;
+  font-weight: 700;
+}
+
+.posts-and-comments-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1rem;
+}
+
+.post-and-comments {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1rem;
+}
+
+.user-post {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.post-title {
+  font-size: 1rem;
+  color: #020817;
+  font-weight: 700;
+}
+
+.post-body {
+  font-size: 1rem;
+  color: #64748b;
+}
+
+.comment-text {
+  width: fit-content;
+  height: auto;
+}
+
+.comment-text p {
+  font-size: 0.875rem;
+  color: #020817;
+  font-weight: 700;
+}
+
+.commenttitle-and-comment {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 0.5rem;
+}
+
+.comment-name {
+  font-size: 0.875rem;
+  color: #020817;
+  font-weight: 700;
+}
+
+.comment-body {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+/* ─── Expand / Collapse ─── */
+
+.posts-and-comments-container {
+  display: none;
+}
+
+.posts-and-comments-container.expanded {
+  display: flex;
+}
+
+.post-content {
+  display: none;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.post-content.expanded {
+  display: flex;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.75rem;
+  padding-left: 1rem;
+  border-left: 3px solid #f1f5f9;
+}
+
+/* ─── Clickable areas ─── */
+
+.posttext-and-arrowicon {
+  cursor: pointer;
+  user-select: none;
+  padding: 0.5rem 0;
+}
+
+.post-title-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.post-title-row .arrow-icon {
+  font-size: 16px;
+  color: #020817;
+}
+
+/* ─── Arrow rotation ─── */
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon.rotated {
+  transform: rotate(180deg);
+}
+
+/* ─── Post separators ─── */
+
+.post-and-comments {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.post-and-comments:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Tablet Responsiveness */
+
+@media (max-width: 1024px) {
+  .user-card {
+    width: 48%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1.5rem;
+    border: 1px solid #e5e7eb;
+    padding: 1.75rem 1.5rem;
+    border-radius: 0.5rem;
+  }
+}
+
+/* Mobile Responsiveness */
+
+@media (max-width: 640px) {
+  .user-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1.5rem;
+    border: 1px solid #e5e7eb;
+    padding: 1.75rem 1.5rem;
+    border-radius: 0.5rem;
+  }
+}
